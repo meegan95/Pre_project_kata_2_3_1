@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
-<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" lang="en">
+<!--<html lang="en">-->
 <head>
     <meta charset="UTF-8">
-    <title>All users</title>
+    <title>Все пользователи</title>
 </head>
 <body>
-All users:
+Все пользователи:
 <div th:each="user : ${users}">
     id
     <a th:text="${user.getId()}">user</a>
@@ -19,7 +19,7 @@ All users:
 
 <br/>
 <hr/>
-<a href="/users/new">Create new user</a>
+<a href="/users/new">Создать нового пользователя</a>
 
 </body>
 </html>
